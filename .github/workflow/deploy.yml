@@ -5,8 +5,7 @@ on:
   push:
     branches:
       - develop   # ou main selon ton flux
-      - develop/**
-      - 'develop-*' #test 
+      
 
 jobs:
   terraform:
