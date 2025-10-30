@@ -6,6 +6,7 @@ on:
     branches:
       - develop   # ou main selon ton flux
       
+      
 
 jobs:
   terraform:
@@ -32,4 +33,6 @@ jobs:
           cd Infra
           terraform init
           terraform plan
-          terraform apply -auto-approve
+          terraform apply -auto-approve -var="environnement=dev"
+      #terraform apply -auto-approve
+
